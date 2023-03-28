@@ -1,0 +1,18 @@
+// create a user object with some sample data
+const user = {
+  name: "John Doe",
+  email: "johndoe@example.com",
+  age: 25
+};
+
+// convert the user object to a JSON string
+const userJSON = JSON.stringify(user);
+
+// store the user JSON string in local storage
+localStorage.setItem("user", userJSON);
+
+// retrieve the user data from local storage
+const storedUserJSON = localStorage.getItem("user");
+
+// convert the stored user JSON string back to an object
+const storedUser = JSON
